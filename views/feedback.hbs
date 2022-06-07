@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="/feed.css">
+
+    <title>MY Chart.js</title>
+</head>
+<body>
+    <div> 
+        <div class="topnav">
+            <div class="logo">
+            <img src="/logo.png">
+            <h2>Feedback Form</h2>
+            <a href="/">Home</a>
+            <a href="/student">Student</a>
+            <a href="classes">Classes</a>
+            <a href="feedback">Feedback</a>
+            <a href="report">Report</a>
+            </div>
+            </div>
+     
+    
+        <table >
+            <tr>
+              <th>id</th>
+              <th>Name</th>
+              <th>email</th>
+              <th>class</th>
+              <th>Subject 1</th>
+              <th>Punctuality</th>
+              <th>Audibility</th>
+              <th>Subject knowledge</th>
+              <th>Doubt clarification</th>
+              <th>Language proficiency</th>
+              <th>Subject 2</th>
+              <th>Punctuality</th>
+              <th>Audibility</th>
+              <th>Subject knowledge</th>
+              <th>Doubt clarification</th>
+              <th>Language proficiency</th>
+              <th>Subject 3</th>
+              <th>Punctuality</th>
+              <th>Audibility</th>
+              <th>Subject knowledge</th>
+              <th>Doubt clarification</th>
+              <th>Language proficiency</th>
+              <th>Subject 4</th>
+              <th>Punctuality</th>
+              <th>Audibility</th>
+              <th>Subject knowledge</th>
+              <th>Doubt clarification</th>
+              <th>Language proficiency</th>
+              <th>Subject 5</th>
+              <th>Punctuality</th>
+              <th>Audibility</th>
+              <th>Subject knowledge</th>
+              <th>Doubt clarification</th>
+              <th>Language proficiency</th>
+            </tr>
+            {{#each data}}
+            <tr>
+              <td>{{id}}</td>
+              <td>{{name}}</td>
+              <td>{{email}}</td>
+              <td>{{dept}}</td>
+              <td>{{sub1}}</td>
+              <td>{{punctuality_1}}</td>
+              <td>{{audibility_1}}</td>
+              <td>{{subject_knowledge_1}}</td>
+              <td>{{doubt_clarification_1}}</td>
+              <td>{{language_proficiency_1}}</td>
+              <td>{{sub2}}</td>
+              <td>{{punctuality_2}}</td>
+              <td>{{audibility_2}}</td>
+              <td>{{subject_knowledge_2}}</td>
+              <td>{{doubt_clarification_2}}</td>
+              <td>{{language_proficiency_2}}</td>
+              <td>{{sub3}}</td>
+              <td>{{punctuality_3}}</td>
+              <td>{{audibility_3}}</td>
+              <td>{{subject_knowledge_3}}</td>
+              <td>{{doubt_clarification_3}}</td>
+              <td>{{language_proficiency_3}}</td>
+              <td>{{sub4}}</td>
+              <td>{{punctuality_4}}</td>
+              <td>{{audibility_4}}</td>
+              <td>{{subject_knowledge_4}}</td>
+              <td>{{doubt_clarification_4}}</td>
+              <td>{{language_proficiency_4}}</td>
+              <td>{{sub5}}</td>
+              <td>{{punctuality_5}}</td>
+              <td>{{audibility_5}}</td>
+              <td>{{subject_knowledge_5}}</td>
+              <td>{{doubt_clarification_5}}</td>
+              <td>{{language_proficiency_5}}</td>
+            </tr>
+             {{/each}}
+             
+          </table>
+     
+    </div>
+ 
+</body>
+</html>

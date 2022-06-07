@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="/report.css">
+
+    <title>MY Chart.js</title>
+</head>
+<body>
+    <div> 
+        <div class="topnav">
+            <div class="logo">
+            <img src="/logo.png">
+            <h2>Feedback Form</h2>
+            <a href="#home">Home</a>
+            <a href="/student">Student</a>
+            <a href="classes">Classes</a>
+            <a href="feedback">Feedback</a>
+            <a href="report">Report</a>
+            </div>
+            </div>
+    <div class="container">
+        <canvas id="myChart"></canvas>
+      </div>
+    <div class="container">
+        <table align="center" class="container">
+            <tr>
+              <th>Subjects</th>
+              <th>Punctuality</th>
+              <th>Audibility</th>
+              <th>Subject knowledge</th>
+              <th>Doubt clarification</th>
+              <th>Language proficiency</th>
+            </tr>
+            <tr>
+              <td>{{sub1}}</td>
+              <td>{{pun1}}%</td>
+              <td>{{audi1}}%</td>
+              <td>{{know1}}%</td>
+              <td>{{clari1}}%</td>
+              <td>{{lang1}}%</td>
+            </tr>
+            <tr>
+              <td>{{sub2}}</td>
+              <td>{{pun2}}%</td>
+              <td>{{audi2}}%</td>
+              <td>{{know2}}%</td>
+              <td>{{clari2}}%</td>
+              <td>{{lang2}}%</td>
+            </tr>
+            <tr>
+             <td>{{sub3}}</td> 
+              <td>{{pun3}}%</td>
+              <td>{{audi3}}%</td>
+              <td>{{know3}}%</td>
+              <td>{{clari3}}%</td>
+              <td>{{lang3}}%</td>
+              </tr>
+              <tr>
+                <td>{{sub4}}</td>
+                <td>{{pun4}}%</td>
+                <td>{{audi4}}%</td>
+                <td>{{know4}}%</td>
+                <td>{{clari4}}%</td>
+                <td>{{lang4}}%</td>
+              </tr>
+              <tr>
+                <td>{{sub5}}</td>
+               <td>{{pun5}}%</td>
+              <td>{{audi5}}%</td>
+              <td>{{know5}}%</td>
+              <td>{{clari5}}%</td>
+              <td>{{lang5}}%</td>
+              </tr>
+             
+          </table>
+    </div>
+    </div>
+
+      <script>
+        const labels = [
+          'punctuality',
+          'audibility',
+          'subject knowledge',
+          'doubt clarification',
+          'language proficiency' 
+        ];
+      
+        const data = {
+          labels: labels,
+          datasets: [{
+            label: '{{sub1}}',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor:'rgb(255, 99, 132)',
+            data: [{{pun1}},{{audi1}},{{know1}},{{clari1}},{{lang1}}],
+          },{
+            label: '{{sub2}}',
+            backgroundColor: '#36A2EB',
+            borderColor: '#36A2EB',
+            data: [{{pun2}},{{audi2}},{{know2}},{{clari2}},{{lang2}}],
+          },{
+            label: '{{sub3}}',
+            backgroundColor: '#FFD778',
+            borderColor: '#FFD778',
+            data: [{{pun3}},{{audi3}},{{know3}},{{clari3}},{{lang3}}],
+          },{
+            label: '{{sub4}}',
+            backgroundColor: '#6FCDCD',
+            borderColor: '#6FCDCD',
+            data: [{{pun4}},{{audi4}},{{know4}},{{clari4}},{{lang4}}],
+          },
+          {
+            label: '{{sub5}}',
+            backgroundColor: '#DB92F2',
+            borderColor: '#DB92F2',
+            data: [{{pun5}},{{audi5}},{{know5}},{{clari5}},{{lang5}}],
+          }]
+        };
+      
+        const config = {
+          type: 'bar',
+          data: data,
+          options: {
+              responsive:true,
+              maintainAspectRatio:true
+          }
+        };
+      </script>
+      <script>
+        const myChart = new Chart(
+          document.getElementById('myChart'),
+          config
+        );
+      </script>
+</body>
+</html>

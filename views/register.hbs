@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Customer Feedback Form</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+   
+    <div class="topnav">
+            <div class="logo">
+            <img src="/logo.png">
+            <h2>Feedback Form</h2>
+            <a href="/"> Home </a>
+            <a href="/student">Student</a>
+            <a href="/admin">Admin</a>
+            </div>
+     </div>
+    <div class="testbox">
+       
+      <form action="/auth/register" method="POST">
+         
+         <label for="name">Name</label>
+        <input type="text" id="name" name="name" value="{{name}}" readonly><br><br>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" value="{{email}}" readonly><br><br>
+        <label for="dept">Department</label>
+        <input type="text" id="dept" name="dept" value="{{dept}}" readonly><br><br>
+        {{#each subs}}   
+        <label for="sub1"><h3>Subject 1</h3></label>
+        <input type="text" id="sub1" name="sub1" value="{{sub1}}" readonly><br><br>
+        <table>
+          <tr>
+            <th class="first-col"></th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+          </tr>
+          <tr>
+            <td class="first-col">Punctuality</td>
+            <td><input type="radio" value=1 name="pun1" /></td>
+            <td><input type="radio" value=2 name="pun1" /></td>
+            <td><input type="radio" value=3 name="pun1" /></td>
+            <td><input type="radio" value=4 name="pun1" /></td>
+            <td><input type="radio" value=5 name="pun1" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Audibility</td>
+            <td><input type="radio" value="1" name="audi1" /></td>
+            <td><input type="radio" value="2" name="audi1" /></td>
+            <td><input type="radio" value="3" name="audi1" /></td>
+            <td><input type="radio" value="4" name="audi1" /></td>
+            <td><input type="radio" value="5" name="audi1" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Subject knowledge</td>
+            <td><input type="radio" value="1" name="know1" /></td>
+            <td><input type="radio" value="2" name="know1" /></td>
+            <td><input type="radio" value="3" name="know1" /></td>
+            <td><input type="radio" value="4" name="know1" /></td>
+            <td><input type="radio" value="5" name="know1" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Doubt Clarification</td>
+            <td><input type="radio" value="1" name="clari1" /></td>
+            <td><input type="radio" value="2" name="clari1" /></td>
+            <td><input type="radio" value="3" name="clari1" /></td>
+            <td><input type="radio" value="4" name="clari1" /></td>
+            <td><input type="radio" value="5" name="clari1" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Language Proficiency</td>
+            <td><input type="radio" value="1" name="lang1" /></td>
+            <td><input type="radio" value="2" name="lang1" /></td>
+            <td><input type="radio" value="3" name="lang1" /></td>
+            <td><input type="radio" value="4" name="lang1" /></td>
+            <td><input type="radio" value="5" name="lang1" /></td>
+          </tr>
+           
+        </table>
+        <label for="sub2"><h3>Subject 2</h3></label>
+        <input type="text" id="sub2" name="sub2" value="{{sub2}}" readonly><br><br>
+        <table>
+          <tr>
+            <th class="first-col"></th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+          </tr>
+          <tr>
+            <td class="first-col">Punctuality</td>
+            <td><input type="radio" value=1 name="pun2" /></td>
+            <td><input type="radio" value=2 name="pun2" /></td>
+            <td><input type="radio" value=3 name="pun2" /></td>
+            <td><input type="radio" value=4 name="pun2" /></td>
+            <td><input type="radio" value=5 name="pun2" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Audibility</td>
+            <td><input type="radio" value="1" name="audi2" /></td>
+            <td><input type="radio" value="2" name="audi2" /></td>
+            <td><input type="radio" value="3" name="audi2" /></td>
+            <td><input type="radio" value="4" name="audi2" /></td>
+            <td><input type="radio" value="5" name="audi2" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Subject knowledge</td>
+            <td><input type="radio" value="1" name="know2" /></td>
+            <td><input type="radio" value="2" name="know2" /></td>
+            <td><input type="radio" value="3" name="know2" /></td>
+            <td><input type="radio" value="4" name="know2" /></td>
+            <td><input type="radio" value="5" name="know2" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Doubt Clarification</td>
+            <td><input type="radio" value="1" name="clari2" /></td>
+            <td><input type="radio" value="2" name="clari2" /></td>
+            <td><input type="radio" value="3" name="clari2" /></td>
+            <td><input type="radio" value="4" name="clari2" /></td>
+            <td><input type="radio" value="5" name="clari2" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Language Proficiency</td>
+            <td><input type="radio" value="1" name="lang2" /></td>
+            <td><input type="radio" value="2" name="lang2" /></td>
+            <td><input type="radio" value="3" name="lang2" /></td>
+            <td><input type="radio" value="4" name="lang1" /></td>
+            <td><input type="radio" value="5" name="lang1" /></td>
+          </tr>
+           
+        </table>
+         </table>
+        <label for="sub3"><h3>Subject 3</h3></label>
+        <input type="text" id="sub3" name="sub3" value="{{sub3}}" readonly><br><br>
+        <table>
+          <tr>
+            <th class="first-col"></th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+          </tr>
+          <tr>
+            <td class="first-col">Punctuality</td>
+            <td><input type="radio" value=1 name="pun3" /></td>
+            <td><input type="radio" value=2 name="pun3" /></td>
+            <td><input type="radio" value=3 name="pun3" /></td>
+            <td><input type="radio" value=4 name="pun3" /></td>
+            <td><input type="radio" value=5 name="pun3" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Audibility</td>
+            <td><input type="radio" value="1" name="audi3" /></td>
+            <td><input type="radio" value="2" name="audi3" /></td>
+            <td><input type="radio" value="3" name="audi3" /></td>
+            <td><input type="radio" value="4" name="audi3" /></td>
+            <td><input type="radio" value="5" name="audi3" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Subject knowledge</td>
+            <td><input type="radio" value="1" name="know3" /></td>
+            <td><input type="radio" value="2" name="know3" /></td>
+            <td><input type="radio" value="3" name="know3" /></td>
+            <td><input type="radio" value="4" name="know3" /></td>
+            <td><input type="radio" value="5" name="know3" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Doubt Clarification</td>
+            <td><input type="radio" value="1" name="clari3" /></td>
+            <td><input type="radio" value="2" name="clari3" /></td>
+            <td><input type="radio" value="3" name="clari3" /></td>
+            <td><input type="radio" value="4" name="clari3" /></td>
+            <td><input type="radio" value="5" name="clari3" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Language Proficiency</td>
+            <td><input type="radio" value="1" name="lang3" /></td>
+            <td><input type="radio" value="2" name="lang3" /></td>
+            <td><input type="radio" value="3" name="lang3" /></td>
+            <td><input type="radio" value="4" name="lang3" /></td>
+            <td><input type="radio" value="5" name="lang3" /></td>
+          </tr>
+           
+        </table>
+        </table>
+        <label for="sub4"><h3>Subject 4</h3></label>
+        <input type="text" id="sub4" name="sub4" value="{{sub4}}" readonly><br><br>
+        <table>
+          <tr>
+            <th class="first-col"></th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+          </tr>
+          <tr>
+            <td class="first-col">Punctuality</td>
+            <td><input type="radio" value=1 name="pun4" /></td>
+            <td><input type="radio" value=2 name="pun4" /></td>
+            <td><input type="radio" value=3 name="pun4" /></td>
+            <td><input type="radio" value=4 name="pun4" /></td>
+            <td><input type="radio" value=5 name="pun4" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Audibility</td>
+            <td><input type="radio" value="1" name="audi4" /></td>
+            <td><input type="radio" value="2" name="audi4" /></td>
+            <td><input type="radio" value="3" name="audi4" /></td>
+            <td><input type="radio" value="4" name="audi4" /></td>
+            <td><input type="radio" value="5" name="audi4" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Subject knowledge</td>
+            <td><input type="radio" value="1" name="know4" /></td>
+            <td><input type="radio" value="2" name="know4" /></td>
+            <td><input type="radio" value="3" name="know4" /></td>
+            <td><input type="radio" value="4" name="know4" /></td>
+            <td><input type="radio" value="5" name="know4" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Doubt Clarification</td>
+            <td><input type="radio" value="1" name="clari4" /></td>
+            <td><input type="radio" value="2" name="clari4" /></td>
+            <td><input type="radio" value="3" name="clari4" /></td>
+            <td><input type="radio" value="4" name="clari4" /></td>
+            <td><input type="radio" value="5" name="clari4" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Language Proficiency</td>
+            <td><input type="radio" value="1" name="lang4" /></td>
+            <td><input type="radio" value="2" name="lang4" /></td>
+            <td><input type="radio" value="3" name="lang4" /></td>
+            <td><input type="radio" value="4" name="lang4" /></td>
+            <td><input type="radio" value="5" name="lang4" /></td>
+          </tr>
+           
+        </table>
+        </table>
+        <label for="sub5"><h3>Subject 5</h3></label>
+        <input type="text" id="sub5" name="sub5" value="{{sub5}}" readonly><br><br>
+        <table>
+          <tr>
+            <th class="first-col"></th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+          </tr>
+          <tr>
+            <td class="first-col">Punctuality</td>
+            <td><input type="radio" value=1 name="pun5" /></td>
+            <td><input type="radio" value=2 name="pun5" /></td>
+            <td><input type="radio" value=3 name="pun5" /></td>
+            <td><input type="radio" value=4 name="pun5" /></td>
+            <td><input type="radio" value=5 name="pun5" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Audibility</td>
+            <td><input type="radio" value="1" name="audi5" /></td>
+            <td><input type="radio" value="2" name="audi5" /></td>
+            <td><input type="radio" value="3" name="audi5" /></td>
+            <td><input type="radio" value="4" name="audi5" /></td>
+            <td><input type="radio" value="5" name="audi5" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Subject knowledge</td>
+            <td><input type="radio" value="1" name="know5" /></td>
+            <td><input type="radio" value="2" name="know5" /></td>
+            <td><input type="radio" value="3" name="know5" /></td>
+            <td><input type="radio" value="4" name="know5" /></td>
+            <td><input type="radio" value="5" name="know5" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Doubt Clarification</td>
+            <td><input type="radio" value="1" name="clari5" /></td>
+            <td><input type="radio" value="2" name="clari5" /></td>
+            <td><input type="radio" value="3" name="clari5" /></td>
+            <td><input type="radio" value="4" name="clari5" /></td>
+            <td><input type="radio" value="5" name="clari5" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Language Proficiency</td>
+            <td><input type="radio" value="1" name="lang5" /></td>
+            <td><input type="radio" value="2" name="lang5" /></td>
+            <td><input type="radio" value="3" name="lang5" /></td>
+            <td><input type="radio" value="4" name="lang5" /></td>
+            <td><input type="radio" value="5" name="lang5" /></td>
+          </tr>
+           
+        </table>
+        {{/each}}
+         
+        <div class="btn-block">
+          <button type="submit" href="">Send Feedback</button>
+        </div>
+      </form>
+    </div>
+     
+  </body>
+</html>

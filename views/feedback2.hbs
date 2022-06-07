@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FEEDBACK FORM</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?
+family=Teko:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+<a href="#" class="navbar-brand mb-0 h1">Feedback Form</a>
+
+<button type="button" data-bs-toggle="collapse" data-bs-
+target="#navbarNav" class="navbar-toggler" aria-control="navbarNav" aria-
+expanded="false" aria-label="Toggle navigation">
+
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav">
+<li class="nav-item active">
+<a href="#" class="nav-link">Home</a>
+</li>
+<li class="nav-item active">
+<a href="#" class="nav-link">Student</a>
+</li>
+<li class="nav-item active">
+<a href="#" class="nav-link">Admin</a>
+</li>
+</ul>
+</div>
+<div class="main">
+
+<div class="logo">
+<img src="logo.png">
+</div>
+</div>
+</nav>
+<table >
+            <tr>
+              <th>id</th>
+              <th>Name</th>
+              <th>email</th>
+              <th>class</th>
+              <th>Subject 1</th>
+              <th>Punctuality</th>
+              <th>Audibility</th>
+              <th>Subject knowledge</th>
+              <th>Doubt clarification</th>
+              <th>Language proficiency</th>
+              <th>Subject 2</th>
+              <th>Punctuality</th>
+              <th>Audibility</th>
+              <th>Subject knowledge</th>
+              <th>Doubt clarification</th>
+              <th>Language proficiency</th>
+              <th>Subject 3</th>
+              <th>Punctuality</th>
+              <th>Audibility</th>
+              <th>Subject knowledge</th>
+              <th>Doubt clarification</th>
+              <th>Language proficiency</th>
+              <th>Subject 4</th>
+              <th>Punctuality</th>
+              <th>Audibility</th>
+              <th>Subject knowledge</th>
+              <th>Doubt clarification</th>
+              <th>Language proficiency</th>
+              <th>Subject 5</th>
+              <th>Punctuality</th>
+              <th>Audibility</th>
+              <th>Subject knowledge</th>
+              <th>Doubt clarification</th>
+              <th>Language proficiency</th>
+            </tr>
+            {{#each data}}
+            <tr>
+              <td>{{id}}</td>
+              <td>{{name}}</td>
+              <td>{{email}}</td>
+              <td>{{dept}}</td>
+              <td>{{sub1}}</td>
+              <td>{{punctuality_1}}</td>
+              <td>{{audibility_1}}</td>
+              <td>{{subject_knowledge_1}}</td>
+              <td>{{doubt_clarification_1}}</td>
+              <td>{{language_proficiency_1}}</td>
+              <td>{{sub2}}</td>
+              <td>{{punctuality_2}}</td>
+              <td>{{audibility_2}}</td>
+              <td>{{subject_knowledge_2}}</td>
+              <td>{{doubt_clarification_2}}</td>
+              <td>{{language_proficiency_2}}</td>
+              <td>{{sub3}}</td>
+              <td>{{punctuality_3}}</td>
+              <td>{{audibility_3}}</td>
+              <td>{{subject_knowledge_3}}</td>
+              <td>{{doubt_clarification_3}}</td>
+              <td>{{language_proficiency_3}}</td>
+              <td>{{sub4}}</td>
+              <td>{{punctuality_4}}</td>
+              <td>{{audibility_4}}</td>
+              <td>{{subject_knowledge_4}}</td>
+              <td>{{doubt_clarification_4}}</td>
+              <td>{{language_proficiency_4}}</td>
+              <td>{{sub5}}</td>
+              <td>{{punctuality_5}}</td>
+              <td>{{audibility_5}}</td>
+              <td>{{subject_knowledge_5}}</td>
+              <td>{{doubt_clarification_5}}</td>
+              <td>{{language_proficiency_5}}</td>
+            </tr>
+             {{/each}}
+             
+          </table>
+</body>
+</html>
